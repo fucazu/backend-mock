@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helciopenha/backend-mock.git"
+    "url": "git+https://github.com/fucazu/backend-mock.git"
   },
-  "author": "helciopenha",
+  "author": "fucazu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/helciopenha/backend-mock/issues"
+    "url": "https://github.com/fucazu/backend-mock/issues"
   },
-  "homepage": "https://github.com/helciopenha/backend-mock#readme",
+  "homepage": "https://github.com/fucazu/backend-mock#readme",
   "devDependencies": {
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",

@@ -50,7 +50,7 @@ metadata:
   name: my-deployment
 spec:
   rules:
-  - host: teste.diadecloud.com
+  - host: sanches.diadecloud.com
     http:
       paths:
       - backend:
