@@ -28,6 +28,7 @@ kind: Service
 metadata:
   labels:
     app: my-deployment
+    argocd.argoproj.io/instance: cebola
   name: my-deployment
 spec:
   internalTrafficPolicy: Cluster
