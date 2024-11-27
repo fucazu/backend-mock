@@ -1,11 +1,12 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
+  name: my-deployment-demo
   labels:
-    app: my-deployment
-  name: my-deployment
+    app: my-deployment-demo
 spec:
-  replicas: 2
+  replicas: 1
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: my-deployment
@@ -43,12 +44,15 @@ spec:
   type: ClusterIP
 
 ---
- 
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: my-deployment
+  annotations:
+    cert-manager.io/issuer: cloudflare-letsencrypt
 spec:
+  ingressClassName: nginx
   rules:
   - host: sanches.diadecloud.com
     http:
