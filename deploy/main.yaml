@@ -64,7 +64,3 @@ spec:
               name: http
         path: /
         pathType: Prefix
-
-
-
-
